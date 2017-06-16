@@ -1,0 +1,20 @@
+[
+  {
+    "name":"clearlane",
+    "sname":"clearlane",
+    "apr":"1.49%",
+    "inform": "lowest rate in your area"
+  },
+  {
+    "name": "nationwide",
+    "sname": "nationwide",
+    "apr": "3.56%",
+    "inform": "Nationwide is on your side!"
+  },
+  {
+    "name": "capitalone",
+    "sname": "capitalone",
+    "apr": "2.78%",
+    "inform": "What's in your wallet?"
+  }
+]
