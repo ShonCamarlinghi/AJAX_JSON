@@ -2,18 +2,21 @@
   {
     "name":"clearlane",
     "sname":"clearlane",
+    "logo" : "https://qq.clearlane.com/app/images/Clearlane_logo.png",
     "apr":"1.49%",
     "inform": "lowest rate in your area"
   },
   {
     "name": "nationwide",
     "sname": "nationwide",
+    "logo" : "http://www.brimg.net/system/img/inst/8601_logo.gif",
     "apr": "3.56%",
     "inform": "Nationwide is on your side!"
   },
   {
     "name": "capitalone",
     "sname": "capitalone",
+    "logo" : "http://www.brimg.net/system/img/inst/9395_logo.gif",
     "apr": "2.78%",
     "inform": "What's in your wallet?"
   }

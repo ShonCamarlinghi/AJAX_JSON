@@ -4,12 +4,14 @@
     <title>AutoLoanCalculator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="/test/wp-content/themes/child/script/jquery.jcarousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--<script src="CSS.css"></script>-->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
     <!--<script src="script.js"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGUrQiyc0nEZ7afQOC94o1iIMlIhH3n8o" async defer></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGUrQiyc0nEZ7afQOC94o1iIMlIhH3n8o" async defer></script>-->
 </head>
 <body>
 
@@ -19,36 +21,33 @@
         <div class="panel panel-primary">
             <div class="panel-heading">Find your monthly payment and local lenders</div>
             <div class="panel-body">
-                <form name = "form1" id = "first_form" action="POST">
+                <form name = "form1" id = "first_form" >
 
                     <h5>Enter Loan Data: </h5><br>
-                    <span>
+
                     <label for="amount">Amount of the loan ($) :</label>
-                    <input type="number" id="amount" name="amount" value = " "/>
-                    <br>
+                    <input type="number" id="amount" name="amount" value="20000" /><br>
+
                     <label for="apr">Annual interest (%) :</label>
-                    <input type="number" step ="0.01" id="apr" name="apr" value = " " />
-                    <br>
+                    <input type="number" step ="0.01" id="apr" name="apr" value="3.5" /><br>
+
                     <label for="years">Repayment period (years) :</label>
-                    <input type="number" id="years" name="years" value = " "/>
-                    <br>
+                    <input type="number" id="years" name="years" value="3"/><br>
+
                     <label for="zip">Zipcode (to find lenders) :</label>
-                    <input type="number" id="zip" name="zip" value = " "/>
-                    <br>
-                    </span>
+                    <input type="number" id="zip" name="zip" value="95129"/><br>
 
                     <h5>Approximate payments :</h5>
                     <input type = "button" value="Calculate" onClick= "getLenders();"/>
                     <input type="reset" value="Clear" /><br><br>
-                </form>
-                <span>
                     <div id = "output1">
-                        <p>Your monthly payment and other stats</p>
+                        <h5>Your monthly payment and other stats</h5>
                     </div>
-                    <div id="chart">
-                        <p> Here is your loan payment chart</p>
-                    </div>
-                </span>
+                </form>
+
+                <canvas id="graph" width="400" height="250">
+                    <h5>Loan Balance, Cumulative Equity, and Interest Payments</h5>
+                </canvas>
                 <p>Sponsors:</p>
                 <div id="output2" class="jumbotron">
                 </div>
@@ -58,7 +57,7 @@
 </div>
 
 
-<script src="script.js"></script>
+
 </body>
 </html>
 

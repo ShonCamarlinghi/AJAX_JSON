@@ -1,0 +1,12 @@
+.output {
+    font-weight:bold;
+}
+#payment {
+    text-decoration:underline;
+}
+#graph {
+    border:solid lightseagreen 1px;
+}
+#form1 {
+    vertical-align: top;
+}
